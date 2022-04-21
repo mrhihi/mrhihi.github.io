@@ -69,10 +69,10 @@
 
   在前面設定的 LogPath 目錄下，可以看到 .Net 程式執行後所產生的組件繫結紀錄如下：
 
-  <img src="Fusionlog/Fusionlog-1.png" alt="Fusionlog-1" style="zoom:80%;" /> <img src="Fusionlog/Fusionlog-2.png" alt="Fusionlog-2" style="zoom:80%;" />
+  <img src="FusionLog/Fusionlog-1.png" alt="Fusionlog-1" style="zoom:80%;" /> <img src="FusionLog/Fusionlog-2.png" alt="Fusionlog-2" style="zoom:80%;" />
 
   打開有問題的紀錄檔，可以從內容去查看問題所在：
 
-  ![Fusionlog-3](Fusionlog/Fusionlog-3.png)
+  ![Fusionlog-3](FusionLog/Fusionlog-3.png)
 
   
