@@ -1,29 +1,11 @@
 # .Net 程式參考遣失的偵錯紀錄(先行編譯網站參考遣失偵錯紀錄)
 
-- 參考資料
-
-  > .NET Framework 工具：  https://docs.microsoft.com/zh-tw/dotnet/framework/tools/
-  >
-  > The file has not been pre-compiled, and cannot be requested (Solved)： https://port135.com/file-has-not-been-pre-compiled-and-cannot-be-requested/
-  >
-  > Fusion Log Viewer： https://techcommunity.microsoft.com/t5/iis-support-blog/fusion-log-viewer-fuslogvw-exe/ba-p/784396
-  >
-  > Fuslogvw.exe (組件繫結記錄檔檢視器)： https://docs.microsoft.com/zh-tw/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer
-  >
-  > What is Fuslogvw EXE?： https://bridgitmendlermusic.com/what-is-fuslogvw-exe/
-  >
-  > How to enable assembly bind failure logging (Fusion) in .NET： https://stackoverflow.com/a/33013110
-  >
-  > 建立或找到 fuslogvw.exe 的替代方案，又名 Fusion Assembly Binding Log Viewer： https://www.796t.com/post/aDJ2c3c=.html
-  >
-  > Fusion++： https://github.com/awaescher/Fusion
-
 - 問題關鍵字
 
   > 檔案 'xxx' 尚未完成先行編譯，因此無法要求此檔案。
   >
   > The file 'xxx' has not been pre-compiled, and cannot be requested.
-
+  
 - 前情提要
 
   Asp.Net MVC 網站採先行編譯，在個人開發環境、公司測試環境執行都正常，但到了客戶端安裝後卻出現「檔案 'xxxx.cshtml' 尚未完成先行編譯，因此無法要求此檔案。」這樣的錯誤訊息。
@@ -55,7 +37,7 @@
   iisreset
   ```
 
-  紀錄到我們需要的 Log 之後，可以再透過以下的命令，移除相關機碼，移除後，記得也要重啟 IIS 讓機碼生效。
+  紀錄到我們需要的 Log 之後，可以再透過以下的命令，移除相關機碼，移除後，**記得也要重啟 IIS 讓機碼生效**。
 
   ```powershell
   Remove-ItemProperty -Path HKLM:\Software\Microsoft\Fusion -Name ForceLog
@@ -74,5 +56,25 @@
   打開有問題的紀錄檔，可以從內容去查看問題所在：
 
   ![Fusionlog-3](FusionLog/Fusionlog-3.png)
+
+  
+
+- 參考資料
+
+  > .NET Framework 工具：  https://docs.microsoft.com/zh-tw/dotnet/framework/tools/
+  >
+  > The file has not been pre-compiled, and cannot be requested (Solved)： https://port135.com/file-has-not-been-pre-compiled-and-cannot-be-requested/
+  >
+  > Fusion Log Viewer： https://techcommunity.microsoft.com/t5/iis-support-blog/fusion-log-viewer-fuslogvw-exe/ba-p/784396
+  >
+  > Fuslogvw.exe (組件繫結記錄檔檢視器)： https://docs.microsoft.com/zh-tw/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer
+  >
+  > What is Fuslogvw EXE?： https://bridgitmendlermusic.com/what-is-fuslogvw-exe/
+  >
+  > How to enable assembly bind failure logging (Fusion) in .NET： https://stackoverflow.com/a/33013110
+  >
+  > 建立或找到 fuslogvw.exe 的替代方案，又名 Fusion Assembly Binding Log Viewer： https://www.796t.com/post/aDJ2c3c=.html
+  >
+  > Fusion++： https://github.com/awaescher/Fusion
 
   
