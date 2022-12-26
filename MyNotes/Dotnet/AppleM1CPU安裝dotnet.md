@@ -1,3 +1,5 @@
+# AppleM1CPU安裝dotnet
+
 到 .NET 網站下載安裝程式
 https://dotnet.microsoft.com/en-us/download/dotnet
 
