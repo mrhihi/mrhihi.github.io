@@ -28,8 +28,8 @@
   ```
 
   透過手動調整機碼的方式，啟用組件繫結紀錄，也可以透過 .NET Framework 的 fuslogvw.exe 工具做設定，但執行環境上不見得會有這個工具，所以主要還是用手動調整機碼的方式進行，以下為 fuslogvw.exe 的執行及設定畫面，設定中的選項，剛好可以應用回上述的機碼設定。
- ![Fuslogvw-1](FusionLog/Fuslogvw-1.png)
-![Fuslogvw-2 ](FusionLog/Fuslogvw-2.png)
+  ![Fuslogvw-1](Fuslogvw-1.png)
+  ![Fuslogvw-2 ](Fuslogvw-2.png)
   如果要紀錄的對象是 IIS 網站，需要重新啟動 IIS 才會生效
 
   ```powershell
@@ -49,11 +49,11 @@
 - 查看組件繫結紀錄
 
   在前面設定的 LogPath 目錄下，可以看到 .Net 程式執行後所產生的組件繫結紀錄如下：
-  ![Fusionlog-1](FusionLog/Fusionlog-1.png)
-  ![Fusionlog-2](FusionLog/Fusionlog-2.png)
+  ![Fusionlog-1](Fusionlog-1.png)
+  ![Fusionlog-2](Fusionlog-2.png)
 
   打開有問題的紀錄檔，可以從內容去查看問題所在：
-  ![Fusionlog-3](FusionLog/Fusionlog-3.png)
+  ![Fusionlog-3](Fusionlog-3.png)
 
   
 

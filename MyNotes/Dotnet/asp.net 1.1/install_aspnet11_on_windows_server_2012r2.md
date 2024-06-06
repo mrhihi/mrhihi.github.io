@@ -34,6 +34,6 @@
 ###### 參考資料
 - [Stackoverflow - Windows Server 2012 with ASP.net 1.1?](https://stackoverflow.com/a/29734570)
 
-  ![18385286](./pics/18385286.png)
+  ![](./pics/18385286.png)
 
 - [鳥毅的BLOG - 在Windows Server 2016安裝ASP.Net 1.1](https://blog.tenyi.com/2021/01/windows-server-2016aspnet-11.html)
