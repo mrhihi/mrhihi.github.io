@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmrhihi_blog=self.webpackChunkmrhihi_blog||[]).push([[121],{8070:h=>{h.exports=JSON.parse('{"tags":[{"label":"mrhihi","permalink":"/blog/tags/mrhihi","count":1}]}')}}]);
