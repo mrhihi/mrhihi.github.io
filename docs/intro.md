@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 ---
+# 我的筆記
 
-# Tutorial Intro
-
-## Getting Started
+## 還沒決定要寫什麼
