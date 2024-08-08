@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmrhihi_blog=self.webpackChunkmrhihi_blog||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"macOS \u5982\u4f55\u5728 Console \u4e2d\u4f7f\u7528\u526a\u8cbc\u7c3f\u7684\u5167\u5bb9","permalink":"/blog/clipboard-on-concole","unlisted":false}]}')}}]);
