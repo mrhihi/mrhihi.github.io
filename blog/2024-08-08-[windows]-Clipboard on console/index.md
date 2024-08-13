@@ -60,7 +60,7 @@ powershell get-clipboard | decode | lines | split column --regex "[:,]" | to csv
 ### 安裝 pasteboard 使用 pbpaste & pbcopy
 
 這個方法只差需要安裝程式，其他就跟 macOS 沒啥太大的差別(當然還是要處理編碼)。  
-安裝的部份我選擇用 Chocolatey ，細簡請看 [這裡](https://community.chocolatey.org/packages/pasteboard#testingResults) 。  
+安裝的部份我選擇用 Chocolatey ，細節請看 [這裡](https://community.chocolatey.org/packages/pasteboard#testingResults) 。  
 
 ```shell
 choco install pasteboard
