@@ -76,6 +76,26 @@ tags: [Android, macOS]
 這樣就可以在 macOS 上安裝 Android 模擬器，並且模擬 Android 裝置。  
 不像 iOS 模擬器可以直接用鍵盤輸入， Android 模擬器的輸入方式是需要透過滑鼠點擊虛擬鍵盤，這點非常不方便。  
 
+- 下載的模擬器在哪裡
+
+    下載的模擬器會放在 `~/.android/avd` 資料夾中。
+
+- 清除模擬器
+
+    ```bash
+    avdmanager delete avd -n pixel7pro
+    ```
+
+- 清除 Android SDK
+
+    ```bash
+    sdkmanager --uninstall "system-images;android-33;google_apis;arm64-v8a"
+    sdkmanager --uninstall "build-tools;33.0.0"
+    sdkmanager --uninstall "platforms;android-33"
+    sdkmanager --uninstall "platform-tools"
+    ``` 
+
+
 ## 參考資料
 
 - [Run Android Emulator on Mac OS X](https://stackoverflow.com/a/76539365/2930179)
