@@ -1,8 +1,9 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
+// import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+// import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import LatestPosts from "@site/src/components/LatestPosts";
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -38,15 +39,37 @@ function HomepageHeader() {
   );
 }
 
+// function FeatureDescription()
+// {
+//   return (
+//     <div className="text--center padding-horiz--md">
+//       <br />
+//       <p>Recent Posts</p>
+//     </div>
+//   );
+// }
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  // const recentPosts = require("../../.docusaurus/docusaurus-plugin-content-blog/default/blog-post-list-prop-default.json");
+
+  // const FeatureList = recentPosts.items.slice(0, 5).map((item, index) => (
+  //   {
+  //     description: (
+  //       <>
+  //         <a href={`${item.permalink}`}>{item.title}</a>{" "}
+  //       </>
+  //     ),
+  //   }
+  // ));
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        {/* <HomepageFeatures /> */}
+        <LatestPosts />
       </main>
     </Layout>
   );

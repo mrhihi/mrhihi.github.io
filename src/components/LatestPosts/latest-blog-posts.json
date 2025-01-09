@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Windows 如何在 Console 中直接執行 csx 程式",
+    "permalink": "/blog/win-run-csx-directly",
+    "description": "前情提要",
+    "tags": [
+      {
+        "inline": true,
+        "label": "windows",
+        "permalink": "/blog/tags/windows"
+      },
+      {
+        "inline": true,
+        "label": "dotnet-script",
+        "permalink": "/blog/tags/dotnet-script"
+      }
+    ],
+    "date": "2024-08-08T00:00:00.000Z",
+    "yearMonth": "2024 年 08 月",
+    "day": "08"
+  },
+  {
+    "title": "macOS 如何在 Console 中使用剪貼簿的內容",
+    "permalink": "/blog/clipboard-on-concole",
+    "description": "前情提要",
+    "tags": [
+      {
+        "inline": true,
+        "label": "macOS",
+        "permalink": "/blog/tags/mac-os"
+      },
+      {
+        "inline": true,
+        "label": "nushell",
+        "permalink": "/blog/tags/nushell"
+      },
+      {
+        "inline": true,
+        "label": "clipboard",
+        "permalink": "/blog/tags/clipboard"
+      }
+    ],
+    "date": "2024-08-07T00:00:00.000Z",
+    "yearMonth": "2024 年 08 月",
+    "day": "07"
+  }
+]
