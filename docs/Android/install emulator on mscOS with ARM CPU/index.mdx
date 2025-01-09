@@ -1,0 +1,83 @@
+﻿---
+slug: install-emulator-on-mscOS-with-ARM-CPU
+title: "[emulator] 在 ARM 架構的 macOS 中安裝 Android 模擬器"
+authors: mrhihi
+tags: [Android, macOS]
+---
+
+## 前情提要
+
+身為一個 Web 開發者，有時候需要在不同的裝置上測試自己的網站，如果可以在自己的電腦上模擬不同的裝置，那將會是一個很方便的功能。  
+
+使用 MacBook Pro 的開發者，要模擬 iPhone 、 iPad 只要透過 Xcode 就可以輕鬆完成，但是如果要模擬 Android 裝置，就需要透過 Android Studio 來完成。  
+
+但是，我並不想開發 Android App，只是想要模擬 Android 裝置，這時候我只需要一個 Android 模擬器，不需要安裝整套 Android Studio。  
+
+## 環境
+
+- macOS Sequoia 15.2
+- MacBook Pro 2021 M1 Pro
+
+## 安裝 Android 模擬器
+
+- 透過 Homebrew 安裝 [android command-line tools](https://developer.android.com/tools?hl=zh-tw)
+
+    ```bash
+    brew install --cask android-commandlinetools
+    ```
+
+- 查看想要安裝的模擬器版本
+
+    ```bash
+    # 只列出 arm64 版本的模擬器
+    sdkmanager --list | grep arm64
+    ```
+
+- 下載想要安裝的模擬器
+
+    ```bash
+    sdkmanager "system-images;android-33;google_apis;arm64-v8a"
+    ```
+
+- 安裝 Android SDK
+
+    這邊要注意安裝的版本號，版本號要跟 Android 模擬器的版本號一致，否則會無法正常運作。
+
+    ```bash
+    # sdkmanager "build-tools;32.0.0"
+    sdkmanager "build-tools;33.0.0"
+
+    # sdkmanager "platforms;android-32"
+    sdkmanager "platforms;android-33"
+
+    sdkmanager "platform-tools"
+    ```
+
+- 建立虛擬裝置
+
+    ```bash
+    avdmanager create avd -n pixel7pro -k "system-images;android-33;google_apis;arm64-v8a" -d pixel_7_pro
+    ```
+
+- 查看虛擬裝置
+
+    ```bash
+    avdmanager list avd
+    ```
+
+- 啟動虛擬裝置
+
+    ```bash
+    emulator -avd pixel7pro
+    ```
+
+## 後記
+
+這樣就可以在 macOS 上安裝 Android 模擬器，並且模擬 Android 裝置。  
+不像 iOS 模擬器可以直接用鍵盤輸入， Android 模擬器的輸入方式是需要透過滑鼠點擊虛擬鍵盤，這點非常不方便。  
+
+## 參考資料
+
+- [Run Android Emulator on Mac OS X](https://stackoverflow.com/a/76539365/2930179)
+- [Add Android AOSP ATD system images](https://github.com/actions/runner-images/issues/8676)
+- [在 MacOS 快速啟動 Android Emulator](https://danielkao.medium.com/%E5%9C%A8-macos-%E5%BF%AB%E9%80%9F%E5%95%9F%E5%8B%95-android-emulator-674585499447)
