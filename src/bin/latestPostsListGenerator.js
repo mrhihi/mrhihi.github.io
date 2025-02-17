@@ -26,10 +26,11 @@ function generateLatestPostList(folderPath, filesPattern, outputPath) {
         const item = JSON.parse(rawdata);
 
         if (item != null && item.draft != true) {
-            console.log(item);
+//            console.log(item);
 
-            item.date ??= item.lastUpdatedAt;
-
+            item.date ??= new Date(item.lastUpdatedAt??0);
+// console.log(item.lastUpdatedAt);
+// console.log(item.date);
             //Extract year and month from date
             const yearMonth = moment(item.date).format("YYYY 年 MM 月");
 
@@ -45,7 +46,6 @@ function generateLatestPostList(folderPath, filesPattern, outputPath) {
             allItems[item.date].day = day;
         }
     });
-
     const allIds = Object.keys(allItems);
     const latestIds = allIds.sort().reverse().slice(0, 5);
     const latestItems = latestIds.map((v) => allItems[v]);
