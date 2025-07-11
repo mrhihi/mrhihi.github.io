@@ -1,31 +1,11 @@
 [
   {
-    "title": "[emulator] 在 ARM 架構的 macOS 中安裝 Android 模擬器",
-    "permalink": "/docs/Android/install emulator on mscOS with ARM CPU/install-emulator-on-mscOS-with-ARM-CPU",
-    "description": "前情提要",
-    "tags": [
-      {
-        "inline": true,
-        "label": "Android",
-        "permalink": "/docs/tags/android"
-      },
-      {
-        "inline": true,
-        "label": "macOS",
-        "permalink": "/docs/tags/mac-os"
-      }
-    ],
-    "date": "2025-01-09T03:24:31.000Z",
-    "yearMonth": "2025 年 01 月",
-    "day": "09"
-  },
-  {
     "title": "我的筆記",
     "permalink": "/docs/intro",
     "description": "紀錄開發的點點滴滴",
     "tags": [],
-    "date": "2025-01-09T01:42:56.000Z",
-    "yearMonth": "2025 年 01 月",
-    "day": "09"
+    "date": "2018-10-14T07:27:35.000Z",
+    "yearMonth": "2018 年 10 月",
+    "day": "14"
   }
 ]

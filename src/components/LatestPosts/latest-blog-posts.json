@@ -1,5 +1,20 @@
 [
   {
+    "title": "用 Vibe Coding 開發 Chrome 擴充功能 - HiTextClip",
+    "permalink": "/blog/Chrome-extension-with-vibe-coding",
+    "description": "前情提要",
+    "tags": [
+      {
+        "inline": true,
+        "label": "Chrome Extension",
+        "permalink": "/blog/tags/chrome-extension"
+      }
+    ],
+    "date": "2025-07-11T00:00:00.000Z",
+    "yearMonth": "2025 年 07 月",
+    "day": "11"
+  },
+  {
     "title": "Windows 如何在 Console 中直接執行 csx 程式",
     "permalink": "/blog/win-run-csx-directly",
     "description": "前情提要",
