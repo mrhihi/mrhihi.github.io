@@ -3,11 +3,14 @@ slug: duckdb-analyze-iislog
 title: 在 macOS/Linux 上用 SQL 分析日誌：從 Log Parser 到 DuckDB
 authors: mrhihi
 tags: [macOS, linux, duckdb, sql, log-analysis]
+image: ./y4iu3dy4iu3dy4iu.png
 ---
 
 # 【實戰筆記】在 macOS/Linux 上用 SQL 分析日誌：從 Log Parser 到 DuckDB 
 
 對於從 Windows 轉到 macOS 或 Linux 的工程師來說，最懷念的工具莫過於 **Microsoft Log Parser**。它能讓我們用熟悉的 SQL 語法去查詢混亂的日誌檔。但在非 Windows 環境下，我們有更強大、更現代的選擇。
+
+![](y4iu3dy4iu3dy4iu.png)
 
 ---
 
