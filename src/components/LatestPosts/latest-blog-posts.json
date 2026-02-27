@@ -40,6 +40,28 @@
     "day": "27"
   },
   {
+    "title": "Git 效率工具：git-hi | 利用 Git External Commands 打造整批自動化管理流",
+    "permalink": "/blog/git-hi-external-commands",
+    "description": "在開發流程中，我們經常會想「如果 Git 能幫我一次處理所有專案就好了」。git-hi 正是基於 Git 內建的強大擴充機制所開發的工具，旨在解決多 Repository 管理時的瑣事。",
+    "tags": [
+      {
+        "inline": false,
+        "label": "Git",
+        "permalink": "/blog/tags/git",
+        "description": "Git tag description"
+      },
+      {
+        "inline": false,
+        "label": "Git External Commands",
+        "permalink": "/blog/tags/git-external-commands",
+        "description": "Git External Commands tag description"
+      }
+    ],
+    "date": "2026-02-27T00:00:00.000Z",
+    "yearMonth": "2026 年 02 月",
+    "day": "27"
+  },
+  {
     "title": "用 Vibe Coding 開發 Chrome 擴充功能 - HiTextClip",
     "permalink": "/blog/Chrome-extension-with-vibe-coding",
     "description": "前情提要",
@@ -54,6 +76,34 @@
     "date": "2025-07-11T00:00:00.000Z",
     "yearMonth": "2025 年 07 月",
     "day": "11"
+  },
+  {
+    "title": "Windows 如何在 Console 中使用剪貼簿的內容",
+    "permalink": "/blog/win-clipboard-on-concole",
+    "description": "前情提要",
+    "tags": [
+      {
+        "inline": false,
+        "label": "Windows",
+        "permalink": "/blog/tags/windows",
+        "description": "Windows tag description"
+      },
+      {
+        "inline": false,
+        "label": "NuShell",
+        "permalink": "/blog/tags/nushell",
+        "description": "NuShell tag description"
+      },
+      {
+        "inline": false,
+        "label": "Clipboard",
+        "permalink": "/blog/tags/clipboard",
+        "description": "Clipboard tag description"
+      }
+    ],
+    "date": "2024-08-08T00:00:00.000Z",
+    "yearMonth": "2024 年 08 月",
+    "day": "08"
   },
   {
     "title": "Windows 如何在 Console 中直接執行 csx 程式",
@@ -76,33 +126,5 @@
     "date": "2024-08-08T00:00:00.000Z",
     "yearMonth": "2024 年 08 月",
     "day": "08"
-  },
-  {
-    "title": "macOS 如何在 Console 中使用剪貼簿的內容",
-    "permalink": "/blog/clipboard-on-concole",
-    "description": "前情提要",
-    "tags": [
-      {
-        "inline": false,
-        "label": "macOS",
-        "permalink": "/blog/tags/macos",
-        "description": "macOS tag description"
-      },
-      {
-        "inline": false,
-        "label": "NuShell",
-        "permalink": "/blog/tags/nushell",
-        "description": "NuShell tag description"
-      },
-      {
-        "inline": false,
-        "label": "Clipboard",
-        "permalink": "/blog/tags/clipboard",
-        "description": "Clipboard tag description"
-      }
-    ],
-    "date": "2024-08-07T00:00:00.000Z",
-    "yearMonth": "2024 年 08 月",
-    "day": "07"
   }
 ]

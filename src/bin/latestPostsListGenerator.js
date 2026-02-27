@@ -17,38 +17,40 @@ generateLatestPostList(blogPath, blogFilesPattern, latestBlogPostList);
 generateLatestPostList(docsPath, docFilesPattern, latestDocsList);
 
 function generateLatestPostList(folderPath, filesPattern, outputPath) {
-    let allItems = {};
+    // 改為陣列收集，避免同一天的多篇文章被同一鍵覆蓋
+    let allItems = [];
 
     const blogFiles = glob.sync(path.join(folderPath, filesPattern));
 
-    blogFiles.map((file) => {
+    blogFiles.forEach((file) => {
         const rawdata = fs.readFileSync(file);
         const item = JSON.parse(rawdata);
 
         if (item != null && item.draft != true) {
-//            console.log(item);
+            // 若沒有 date，使用 lastUpdatedAt
+            item.date ??= new Date(item.lastUpdatedAt ?? 0);
 
-            item.date ??= new Date(item.lastUpdatedAt??0);
-// console.log(item.lastUpdatedAt);
-// console.log(item.date);
-            //Extract year and month from date
             const yearMonth = moment(item.date).format("YYYY 年 MM 月");
-
             const day = moment(item.date).format("DD");
+            const ts = new Date(item.date).getTime();
 
-            allItems[item.date] = new Object();
-            allItems[item.date].title = item.title;
-            allItems[item.date].permalink = item.permalink;
-            allItems[item.date].description = item.description;
-            allItems[item.date].tags = item.tags;
-            allItems[item.date].date = item.date;
-            allItems[item.date].yearMonth = yearMonth;
-            allItems[item.date].day = day;
+            allItems.push({
+                title: item.title,
+                permalink: item.permalink,
+                description: item.description,
+                tags: item.tags,
+                date: item.date,
+                yearMonth: yearMonth,
+                day: day,
+                _ts: ts
+            });
         }
     });
-    const allIds = Object.keys(allItems);
-    const latestIds = allIds.sort().reverse().slice(0, 5);
-    const latestItems = latestIds.map((v) => allItems[v]);
+
+    const latestItems = allItems
+        .sort((a, b) => b._ts - a._ts)
+        .slice(0, 5)
+        .map(({ _ts, ...rest }) => rest);
 
     generateLatestFile(latestItems, outputPath);
 }

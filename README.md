@@ -22,8 +22,8 @@ blog 是單篇的文章， docs 可以做分類，因此這邊以後大部份會
 
 ```shell
   npm run clear
-  npm run new
   npm run build
+  npm run new
 ```
 
 ## 部署
