@@ -1,13 +1,54 @@
 [
   {
+    "title": "在 macOS/Linux 上用 SQL 分析日誌：從 Log Parser 到 DuckDB",
+    "permalink": "/blog/duckdb-analyze-iislog",
+    "description": "對於從 Windows 轉到 macOS 或 Linux 的工程師來說，最懷念的工具莫過於 Microsoft Log Parser。它能讓我們用熟悉的 SQL 語法去查詢混亂的日誌檔。但在非 Windows 環境下，我們有更強大、更現代的選擇。",
+    "tags": [
+      {
+        "inline": false,
+        "label": "macOS",
+        "permalink": "/blog/tags/macos",
+        "description": "macOS tag description"
+      },
+      {
+        "inline": false,
+        "label": "Linux",
+        "permalink": "/blog/tags/linux",
+        "description": "Linux tag description"
+      },
+      {
+        "inline": false,
+        "label": "DuckDB",
+        "permalink": "/blog/tags/duckdb",
+        "description": "DuckDB tag description"
+      },
+      {
+        "inline": false,
+        "label": "SQL",
+        "permalink": "/blog/tags/sql",
+        "description": "SQL tag description"
+      },
+      {
+        "inline": false,
+        "label": "Log Analysis",
+        "permalink": "/blog/tags/log-analysis",
+        "description": "Log Analysis tag description"
+      }
+    ],
+    "date": "2026-02-27T00:00:00.000Z",
+    "yearMonth": "2026 年 02 月",
+    "day": "27"
+  },
+  {
     "title": "用 Vibe Coding 開發 Chrome 擴充功能 - HiTextClip",
     "permalink": "/blog/Chrome-extension-with-vibe-coding",
     "description": "前情提要",
     "tags": [
       {
-        "inline": true,
+        "inline": false,
         "label": "Chrome Extension",
-        "permalink": "/blog/tags/chrome-extension"
+        "permalink": "/blog/tags/chrome-extension",
+        "description": "Chrome Extension tag description"
       }
     ],
     "date": "2025-07-11T00:00:00.000Z",
@@ -20,14 +61,16 @@
     "description": "前情提要",
     "tags": [
       {
-        "inline": true,
-        "label": "windows",
-        "permalink": "/blog/tags/windows"
+        "inline": false,
+        "label": "Windows",
+        "permalink": "/blog/tags/windows",
+        "description": "Windows tag description"
       },
       {
-        "inline": true,
+        "inline": false,
         "label": "dotnet-script",
-        "permalink": "/blog/tags/dotnet-script"
+        "permalink": "/blog/tags/dotnet-script",
+        "description": "dotnet-script tag description"
       }
     ],
     "date": "2024-08-08T00:00:00.000Z",
@@ -40,19 +83,22 @@
     "description": "前情提要",
     "tags": [
       {
-        "inline": true,
+        "inline": false,
         "label": "macOS",
-        "permalink": "/blog/tags/mac-os"
+        "permalink": "/blog/tags/macos",
+        "description": "macOS tag description"
       },
       {
-        "inline": true,
-        "label": "nushell",
-        "permalink": "/blog/tags/nushell"
+        "inline": false,
+        "label": "NuShell",
+        "permalink": "/blog/tags/nushell",
+        "description": "NuShell tag description"
       },
       {
-        "inline": true,
-        "label": "clipboard",
-        "permalink": "/blog/tags/clipboard"
+        "inline": false,
+        "label": "Clipboard",
+        "permalink": "/blog/tags/clipboard",
+        "description": "Clipboard tag description"
       }
     ],
     "date": "2024-08-07T00:00:00.000Z",

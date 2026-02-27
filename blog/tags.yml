@@ -14,3 +14,43 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+macOS:
+  label: macOS
+  permalink: /macos
+  description: macOS tag description
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linux tag description
+duckdb:
+  label: DuckDB
+  permalink: /duckdb
+  description: DuckDB tag description
+sql:
+  label: SQL
+  permalink: /sql
+  description: SQL tag description
+log-analysis:
+  label: Log Analysis
+  permalink: /log-analysis
+  description: Log Analysis tag description
+nushell:
+  label: NuShell
+  permalink: /nushell
+  description: NuShell tag description
+clipboard:
+  label: Clipboard
+  permalink: /clipboard
+  description: Clipboard tag description
+windows:
+  label: Windows
+  permalink: /windows
+  description: Windows tag description
+dotnet-script:
+  label: dotnet-script
+  permalink: /dotnet-script
+  description: dotnet-script tag description
+Chrome Extension:
+  label: Chrome Extension
+  permalink: /chrome-extension
+  description: Chrome Extension tag description
