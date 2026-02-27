@@ -3,6 +3,7 @@ slug: git-hi-external-commands
 title: Git 效率工具：git-hi | 利用 Git External Commands 打造整批自動化管理流
 authors: mrhihi
 tags: [git, git-external-commands]
+image: 18ofai18ofai18of.png
 ---
 
 # Git 效率工具：git-hi | 利用 Git External Commands 打造整批自動化管理流
@@ -10,6 +11,8 @@ tags: [git, git-external-commands]
 在開發流程中，我們經常會想「如果 Git 能幫我一次處理所有專案就好了」。**git-hi** 正是基於 Git 內建的強大擴充機制所開發的工具，旨在解決多 Repository 管理時的瑣事。
 
 👉 **GitHub 專案頁面**：[https://github.com/mrhihi/git-hi](https://github.com/mrhihi/git-hi)
+
+![git hi](18ofai18ofai18of.png)
 
 ---
 
