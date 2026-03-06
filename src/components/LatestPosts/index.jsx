@@ -22,7 +22,7 @@ function Post({ title, permalink, tags, yearMonth, day }) {
             <div className={styles.latest_post_row_item_tags}>
                 {tags.length > 0 &&
                     tags
-                        .slice(0, 2)
+                        // .slice(0, 2)
                         .map(({ label, permalink: tagPermalink }, index) => (
                             <Link
                                 key={tagPermalink}
